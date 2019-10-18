@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Heimdal.MainServer": {
+    "Goals.MainServer": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
