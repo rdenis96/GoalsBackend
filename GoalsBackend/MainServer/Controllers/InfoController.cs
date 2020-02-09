@@ -13,9 +13,9 @@ namespace MainServer.Controllers
     [ApiController]
     public class InfoController : ControllerBase
     {
-        private readonly IHostingEnvironment _environment;
+        private readonly IWebHostEnvironment _environment;
 
-        public InfoController(IHostingEnvironment env)
+        public InfoController(IWebHostEnvironment env)
         {
             _environment = env;
         }
