@@ -6,6 +6,8 @@ namespace Domain.Account
 {
     public class AccountProfile : IEquatable<AccountProfile>
     {
+        public int AccountId { get; set; }
+        public Account Account { get; set; }
         public string ProfileImage { get; set; }
         public bool EmailVisible { get; set; }
         public AccountBiography Biography { get; set; }

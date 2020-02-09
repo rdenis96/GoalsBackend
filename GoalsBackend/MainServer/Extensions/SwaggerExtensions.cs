@@ -14,12 +14,11 @@ namespace MainServer.Extensions
     {
         public static void UseCustomSwaggerUi(this IApplicationBuilder app)
         {
-            app.UseSwaggerUi3(typeof(Startup).GetTypeInfo().Assembly, settings =>
+            app.UseSwaggerUi3WithApiExplorer(settings =>
             {
                 settings.GeneratorSettings.DefaultPropertyNameHandling = PropertyNameHandling.CamelCase;
                 settings.GeneratorSettings.DefaultEnumHandling = EnumHandling.Integer;
                 //settings.GeneratorSettings.OperationProcessors.Add(new NSwagOperationProcessor());
-                settings.GeneratorSettings.IsAspNetCore = true;
             });
         }
     }
