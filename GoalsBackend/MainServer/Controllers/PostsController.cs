@@ -17,6 +17,11 @@ namespace MainServer.Controllers
         [HttpPost]
         public async Task<ActionResult<Post>> Create([FromBody]Post postModel)
         {
+            postModel = new Post
+            {
+                Date = postModel.Date,
+                Description = postModel.Description
+            };
             var post = await worker.Create(postModel);
             return Ok(post);
         }

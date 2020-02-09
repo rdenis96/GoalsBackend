@@ -13,7 +13,8 @@ namespace MainServer.Extensions
     {
         public static void UseCustomSwaggerUi(this IApplicationBuilder app)
         {
-            app.UseCustomSwaggerUi();
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
         }
     }
 }

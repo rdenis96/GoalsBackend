@@ -37,6 +37,7 @@ namespace MainServer
             .AddJsonOptions(options =>
             {
             }).SetCompatibilityVersion(CompatibilityVersion.Latest);
+            services.AddSwaggerDocument();
 
             //services.Configure<GeneralSettings>(Configuration.GetSection(nameof(GeneralSettings)));
         }
